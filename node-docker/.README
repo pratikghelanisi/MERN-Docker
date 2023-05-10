@@ -1,0 +1,41 @@
+docker build -t express-docker-image .
+docker image ls
+docker run --name nodejs-image-demo[contaner-name] -p 80:8080 -d your_dockerhub_username/nodejs-image-demo[image-name]
+docker run --name nodejs-image-demo -p 80:8080 -d express-docker-image
+http://localhost:8080/
+
+docker run \
+  --name app \
+    --link mongodb \
+    -e MONGO_URL=mongodb \
+    -e PORT=4000 \
+    -p 4000:4000 \
+    -v `pwd`/nodejs-with-mongodb-api-example:/src \CLS
+
+    -v nodemodules:/src/node_modules \
+    app npm run dev:watch
+
+
+    docker volume create --name nodemodules
+
+
+    docker run -e PORT=4000 -p 4000:4000 -v `pwd`/express-docker-image:/src -v nodemodules:/src/node_modules app npm run dev:watch
+
+
+docker run --rm -d -p 5500:5500 -v %cd%:/app --name express-docker-container express-docker-image
+
+--name nodejs-image-demo -p 80:8080 -v `pwd`/express-docker-image:/src -d express-docker-image
+
+docker run --name nodejs-image-demo -p 80:8080 -d express-docker-image
+
+
+80
+
+-v "$(pwd)"/target:/app
+
+docker run --rm -d -v "$(pwd)"/app:/app --name nodejs-image-demo -p 80:8080 -d express-docker-image
+
+E:\Work\Docker SOP\node-project
+
+docker run --rm -d -v  "E:\Work\Docker SOP\node-project":/app --name nodejs-image-demo -p 80:8080 -d express-docker-image
+
